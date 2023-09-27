@@ -4,7 +4,7 @@ import { json } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 
 export const config = {
-  maxDuration: 3,
+  maxDuration: 10,
 };
 
 export const meta: V2_MetaFunction = () => {
@@ -18,7 +18,7 @@ const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export async function loader({ request }: LoaderArgs) {
   await wait(1000 * 7); // 7 seconds
-  return json({ hello: "world" });
+  return json({ hello: "remix 1.18" });
 }
 
 export default function Index() {
