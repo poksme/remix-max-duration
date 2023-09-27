@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@vercel/remix";
+import type { V2_MetaFunction } from "@vercel/remix";
 import type { LoaderArgs } from '@remix-run/node';
 import { json } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
@@ -7,7 +7,7 @@ export const config = {
   maxDuration: 3,
 };
 
-export const meta: MetaFunction = () => {
+export const meta: V2_MetaFunction = () => {
   return [
     { title: "New Remix App" },
     { name: "description", content: "Welcome to Remix!" },
