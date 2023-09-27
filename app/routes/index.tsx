@@ -4,7 +4,7 @@ import { json } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 
 export const config = {
-  maxDuration: 10,
+  maxDuration: 5,
 };
 
 export const meta: V2_MetaFunction = () => {
